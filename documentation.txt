@@ -1,0 +1,11 @@
+event9--->mouse{
+  if value>>12 || value<<-12 then jerky movement
+}
+
+event3--->keyboard{
+  code=keyswitch number
+}
+
+event11--->touchpad{
+
+}
