@@ -8,6 +8,9 @@ int main(void)
     {
         BeginDrawing();
             ClearBackground(RAYWHITE);
+            int x=GetMouseX();
+            int y=GetMouseY();
+            DrawFPS(x, y); 
             DrawText("Click to activate", 190, 200, 20, LIGHTGRAY);
         EndDrawing();
     }

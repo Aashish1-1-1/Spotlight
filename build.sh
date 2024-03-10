@@ -1,2 +1,2 @@
-gcc -o main main.c -lraylib && ./main
+gcc -o main $1 -lraylib && ./main
 
