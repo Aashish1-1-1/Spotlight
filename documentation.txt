@@ -1,5 +1,6 @@
 event9--->mouse{
   if value>>12 || value<<-12 then jerky movement
+  value=120 wheelup -120 wheeldown
 }
 
 event3--->keyboard{
