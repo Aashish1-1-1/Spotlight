@@ -9,11 +9,12 @@
 //#define TOUCHPAD "/dev/input/event0"
 
 void createSpot(){
-  printf("Spotlight activated");
+    setenv("DISPLAY", ":0", 1);
+    system("bash bashon.sh");
 }
 
 void offSpot(){
-  printf("Spotlight turned off");
+    system("gsettings set org.gnome.desktop.interface cursor-theme Adwaita");
 }
 
 int main()
@@ -30,7 +31,7 @@ int main()
     if(ie.value==120){
       createSpot(); 
     }
-    if(ie.value==589825){
+    if(ie.value==-120){
       offSpot();
     }
 		printf("time %ld.%06ld\ttype %d\tcode %d\tvalue %d\n",
