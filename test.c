@@ -1,4 +1,3 @@
-#include <linux/input-event-codes.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <fcntl.h>
@@ -9,8 +8,7 @@
 //#define TOUCHPAD "/dev/input/event0"
 
 void createSpot(){
-    setenv("DISPLAY", ":0", 1);
-    system("bash bashon.sh");
+    system("bash change.sh && gsettings set org.gnome.desktop.interface cursor-theme Spotlight");
 }
 
 void offSpot(){
@@ -29,7 +27,7 @@ int main()
 
 	while(read(fd, &ie, sizeof(struct input_event))) {
     if(ie.value==120){
-      createSpot(); 
+      createSpot();
     }
     if(ie.value==-120){
       offSpot();
