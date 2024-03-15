@@ -19,5 +19,6 @@ a way to set it up.
     git clone https://github.com/Aashish69-96/Spotlight
     cd Spotlight
     mv ./Assets/Spotlight/  /usr/share/icons/
+    cd src
     bash build.sh main.c
 ```
