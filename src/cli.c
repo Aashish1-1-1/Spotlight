@@ -4,11 +4,11 @@
 #include <unistd.h>
 #include <linux/input.h>
 
-#define MOUSEFILE "/dev/input/event9"
+#define MOUSEFILE "/dev/input/event15"
 //#define TOUCHPAD "/dev/input/event0"
 
 void createSpot(){
-    system("bash change.sh && gsettings set org.gnome.desktop.interface cursor-theme Spotlight");
+    system("gsettings set org.gnome.desktop.interface cursor-theme Spotlight");
 }
 
 void offSpot(){
