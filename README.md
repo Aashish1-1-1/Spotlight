@@ -1,5 +1,5 @@
 # Spotlight (A highlighter for linux)
-Spotlight, a Linux highlighter, engages when you scroll down with your mouse and returns to default upon scrolling up.
+Spotlight, a Linux cursor highlighter, engages when you scroll down with your mouse and returns to default upon scrolling up.
 # Demo
 [![Demo Video](https://img.youtube.com/vi/096G4vzwgjE/0.jpg)](https://www.youtube.com/watch?v=096G4vzwgjE)
 
@@ -13,7 +13,7 @@ I learned how the hardware like mouse,keyboard,touchpad and so on works together
 # How to run it locally
 Idk about other distro how are their file system but for fedora workstation here is
 a way to set it up.
-## Note: Please install Raylib is you want to use gui version otherwise you can run in terminal  from cli.c
+## Note: Please install Raylib if you want to use gui version otherwise you can run in terminal  from cli.c
 
 ```bash
     git clone https://github.com/Aashish69-96/Spotlight
