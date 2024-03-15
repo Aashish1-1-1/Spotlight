@@ -2,7 +2,10 @@
 Spotlight, a Linux cursor highlighter, engages when you scroll down with your mouse and returns to default upon scrolling up.
 # Demo
 [![Demo Video](https://img.youtube.com/vi/096G4vzwgjE/0.jpg)](https://www.youtube.com/watch?v=096G4vzwgjE)
-
+---
+# User-Interface
+![ON](https://github.com/Aashish69-96/Spotlight/blob/main/Assets/images/spotlighton.png)
+![OFF](https://github.com/Aashish69-96/Spotlight/blob/main/Assets/images/spotlightoff.png)
 ---
 # How does it works??
 It reads the mouse input from linux kernel from a file  which is located at '/dev/input/eventX' in this particular folder there are different events for different hardware and when activated it toggles the cursor to Highlighter using gnome command
