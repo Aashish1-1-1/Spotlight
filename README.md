@@ -1,6 +1,7 @@
 # Spotlight (A highlighter for linux)
 Spotlight, a Linux cursor highlighter, engages when you scroll down with your mouse and returns to default upon scrolling up.
 # Demo
+Click to play demo:
 [![Demo Video](https://img.youtube.com/vi/096G4vzwgjE/0.jpg)](https://www.youtube.com/watch?v=096G4vzwgjE)
 ---
 # User-Interface
