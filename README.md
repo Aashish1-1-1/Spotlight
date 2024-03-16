@@ -4,7 +4,7 @@ Spotlight, a Linux cursor highlighter, engages when you scroll down with your mo
 [![Demo Video](https://img.youtube.com/vi/096G4vzwgjE/0.jpg)](https://www.youtube.com/watch?v=096G4vzwgjE)
 ---
 # User-Interface
-![ON](https://github.com/Aashish69-96/Spotlight/blob/main/Assets/images/spotlighton.png)
+![ON](https://github.com/Aashish69-96/Spotlight/blob/main/Assets/images/spotlighon.png)
 ![OFF](https://github.com/Aashish69-96/Spotlight/blob/main/Assets/images/spotlightoff.png)
 ---
 # How does it works??
