@@ -26,3 +26,7 @@ a way to set it up.
     cd src
     bash build.sh main.c
 ```
+# License
+Copyright(c) 2024 Aashish Adhikari
+This software is distributed under MIT license
+

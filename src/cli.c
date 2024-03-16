@@ -1,10 +1,13 @@
+// Copyright(c) 2024 Aashish Adhikari
+// This software is distributed under MIT license
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <fcntl.h>
 #include <unistd.h>
 #include <linux/input.h>
 
-#define MOUSEFILE "/dev/input/event15"
+#define MOUSEFILE "/dev/input/event9"
 //#define TOUCHPAD "/dev/input/event0"
 
 void createSpot(){
