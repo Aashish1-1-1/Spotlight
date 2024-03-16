@@ -10,3 +10,5 @@ event3--->keyboard{
 event11--->touchpad{
 
 }
+
+Note:This is the event number for my system different system may have different event numbers for different hardware
