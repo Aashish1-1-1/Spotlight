@@ -17,9 +17,8 @@ void createSpot(){
 void offSpot(){
     system("gsettings set org.gnome.desktop.interface cursor-theme Adwaita");
 }
+void gatekeeper(){
 
-int main()
-{
 	int fd;
 	struct input_event ie;
 
@@ -38,6 +37,10 @@ int main()
 		printf("time %ld.%06ld\ttype %d\tcode %d\tvalue %d\n",
 		       ie.time.tv_sec, ie.time.tv_usec, ie.type, ie.code, ie.value);
 	}
-
+}
+int main()
+{
+  gatekeeper();
+  offSpot();
 	return 0;
 }

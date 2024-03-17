@@ -71,7 +71,7 @@ int main()
     const int screenWidth = 800;
     const int screenHeight = 450;
 
-    InitWindow(screenWidth, screenHeight, "raylib");
+    InitWindow(screenWidth, screenHeight, "Spotlight");
 
     // Initialize the button
     init_button(&button_0, (Rectangle){screenWidth / 2 - 100, screenHeight / 2 - 50, 200, 100}, RED);
@@ -94,6 +94,7 @@ int main()
 
     // De-Initialization
     //--------------------------------------------------------------------------------------
+    offSpot();
     CloseWindow(); // Close window and OpenGL context
     //--------------------------------------------------------------------------------------
 
@@ -147,6 +148,7 @@ static void UpdateDrawFrame(void)
   
     }
     else {
+        offSpot();
         ClearBackground(WHITE);
     }
 
