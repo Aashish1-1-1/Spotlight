@@ -15,9 +15,8 @@ It reads the mouse input from linux kernel from a file  which is located at '/de
 I learned how the hardware like mouse,keyboard,touchpad and so on works together with the software under the hood.I learned to make a custom cursor for my system and set it up. I learned some basics of software development using Raylib a graphic library.
 
 # How to run it locally
-Idk about other distro how are their file system but for fedora workstation here is
-a way to set it up.
-## Note: Please install Raylib if you want to use gui version otherwise you can run in terminal  from cli.c if it says permission required then permission must be given to read the input file done by 'sudo chown:'usename' eventX'
+For gnome  here is a way to set it up as filesystem are same for linux env.
+### Note: Please install Raylib(optional) if you want to use gui version otherwise you can run in terminal  from cli.c if it says permission required then permission must be given to read the input file done by 'sudo chown:'usename' eventX' eventX is a variable to be find go to /dev/input connect mouse once and disconnect carefully observe which file is vanishing as disconnected and respawn connecting and change the program for that particular file in preprosser of program
 
 ```bash
     git clone https://github.com/Aashish69-96/Spotlight
