@@ -17,12 +17,12 @@ I learned how the hardware like mouse,keyboard,touchpad and so on works together
 # How to run it locally
 Idk about other distro how are their file system but for fedora workstation here is
 a way to set it up.
-## Note: Please install Raylib if you want to use gui version otherwise you can run in terminal  from cli.c
+## Note: Please install Raylib if you want to use gui version otherwise you can run in terminal  from cli.c if it says permission required then permission must be given to read the input file done by 'sudo chown:'usename' eventX'
 
 ```bash
     git clone https://github.com/Aashish69-96/Spotlight
     cd Spotlight
-    mv ./Assets/Spotlight/  /usr/share/icons/
+    sudo cp -R ./Assets/Spotlight/  /usr/share/icons/
     cd src
     bash build.sh main.c
 ```

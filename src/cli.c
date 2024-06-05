@@ -7,7 +7,7 @@
 #include <unistd.h>
 #include <linux/input.h>
 
-#define MOUSEFILE "/dev/input/event9"
+#define MOUSEFILE "/dev/input/event3"
 //#define TOUCHPAD "/dev/input/event0"
 
 void createSpot(){
@@ -34,8 +34,7 @@ void gatekeeper(){
     if(ie.value==-120){
       offSpot();
     }
-//		printf("time %ld.%06ld\ttype %d\tcode %d\tvalue %d\n",
-		       ie.time.tv_sec, ie.time.tv_usec, ie.type, ie.code, ie.value);
+//		printf("time %ld.%06ld\ttype %d\tcode %d\tvalue %d\n",ie.time.tv_sec, ie.time.tv_usec, ie.type, ie.code, ie.value);
 	}
 }
 int main()
