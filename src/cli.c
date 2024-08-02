@@ -5,9 +5,11 @@
 #include <stdlib.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include <stdbool.h>
 #include <linux/input.h>
 
-#define MOUSEFILE "/dev/input/event3"
+#define KEYBOARD "/dev/input/event16"
+//#define MOUSEFILE "/dev/input/event3"
 //#define TOUCHPAD "/dev/input/event0"
 
 void createSpot(){
@@ -17,29 +19,31 @@ void createSpot(){
 void offSpot(){
     system("gsettings set org.gnome.desktop.interface cursor-theme Adwaita");
 }
-void gatekeeper(){
 
+void gatekeeper(){
+	bool toggle=false;
 	int fd;
 	struct input_event ie;
 
-	if((fd = open(MOUSEFILE, O_RDONLY)) == -1) {
+	if((fd = open(KEYBOARD, O_RDONLY)) == -1) {
 		perror("opening device");
 		exit(EXIT_FAILURE);
 	}
 
 	while(read(fd, &ie, sizeof(struct input_event))) {
-    if(ie.value==120){
-      createSpot();
-    }
-    if(ie.value==-120){
-      offSpot();
-    }
-//		printf("time %ld.%06ld\ttype %d\tcode %d\tvalue %d\n",ie.time.tv_sec, ie.time.tv_usec, ie.type, ie.code, ie.value);
+    		if(ie.code==31 && ie.value==1){
+	   		 if(!toggle) createSpot();
+	   		 else
+	   		     offSpot();
+
+	   		 toggle=!(toggle);
+    		}
+//	printf("time %ld.%06ld\ttype %d\tcode %d\tvalue %d\n",ie.time.tv_sec, ie.time.tv_usec, ie.type, ie.code, ie.value);
 	}
 }
 int main()
 {
-  gatekeeper();
-  offSpot();
+  	gatekeeper();
+  	offSpot();
 	return 0;
 }
