@@ -24,7 +24,7 @@ Note: Please install Raylib(optional) if you want to use gui version otherwise y
     cd Spotlight
     sudo cp -R ./Assets/Spotlight/  /usr/share/icons/
     cd src
-    bash build.sh main.c
+    bash build.sh
 ```
 # License
 Copyright(c) 2024 Aashish Adhikari
