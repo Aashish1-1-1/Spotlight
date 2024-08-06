@@ -16,7 +16,7 @@ static void activate (GtkApplication* app,gpointer user_data)
   window = gtk_application_window_new (app);
   gtk_window_set_title (GTK_WINDOW (window), "Spotlight");
   gtk_window_set_default_size (GTK_WINDOW (window), 500, 500);
-  button = gtk_button_new_with_label ("Press s to activate");
+  button = gtk_button_new_with_label ("Press [s] to activate");
   gtk_window_set_child (GTK_WINDOW (window), button);
 
   gtk_window_present (GTK_WINDOW (window));
